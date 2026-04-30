@@ -4,7 +4,7 @@
     "name": "> Link ATT&CK Technique",
     "aliasName": null,
     "tag": null,
-    "description": "Links MITRE Techniques or sub-techniques to Alert or Incident",
+    "description": "Links MITRE Techniques or sub-techniques to Alert or Case",
     "isActive": true,
     "debug": false,
     "singleRecordExecution": false,
@@ -251,7 +251,7 @@
             "name": "Prepare Body for Techniques",
             "description": null,
             "arguments": {
-                "bodyParam": "{ \"mitregroups\": {{vars.groupIRI | string}},\n\"mitretactics\": {{vars.tacticIRI | string}},\n\"mitresoftware\": {{vars.softwareIRI | string}},\n\"mitre_techniques\": {{vars.techniqueIRI | string}}, \n\"mitremitigations\": {{vars.mitigationIRI | string}}}"
+                "bodyParam": "{ \"mitregroups\": {{vars.groupIRI | string}},\n\"mitretactics\": {{vars.tacticIRI | string}},\n\"mitresoftware\": {{vars.softwareIRI | string}},\n\"mitretechniques\": {{vars.techniqueIRI | string}}, \n\"mitremitigations\": {{vars.mitigationIRI | string}}}"
             },
             "status": null,
             "top": "570",
@@ -283,7 +283,7 @@
         },
         {
             "@type": "WorkflowStep",
-            "name": "Update Alert or Incident Record",
+            "name": "Update Alert or Case Record",
             "description": null,
             "arguments": {
                 "params": {
@@ -425,6 +425,6 @@
     "recordTags": [
         "Alert",
         "Enrichment",
-        "Incident"
+        "Case"
     ]
 }
