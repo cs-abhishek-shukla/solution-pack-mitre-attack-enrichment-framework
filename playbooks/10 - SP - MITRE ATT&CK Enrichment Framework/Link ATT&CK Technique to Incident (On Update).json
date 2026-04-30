@@ -1,10 +1,10 @@
 {
     "@type": "Workflow",
     "triggerLimit": null,
-    "name": "Link ATT&CK Technique to Incident (On Update)",
+    "name": "Link ATT&CK Technique to Case (On Update)",
     "aliasName": null,
     "tag": null,
-    "description": "Links MITRE technique or sub-technique to an incident, based on MITRE Attack ID",
+    "description": "Links MITRE technique or sub-technique to an case, based on MITRE Attack ID",
     "isActive": true,
     "debug": false,
     "singleRecordExecution": false,
@@ -103,7 +103,7 @@
     "deletedAt": null,
     "recordTags": [
         "Enrichment",
-        "Incident",
+        "Case",
         "PostUpdate"
     ]
 }
